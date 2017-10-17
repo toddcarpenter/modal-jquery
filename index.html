@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Modal</title>
+  <meta name="description" content="Website Description">
+  <meta name="author" content="Netplus">
+</head>
+
+<body>
+  <a href="#" class="openModal">Open Modal</a>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="js/modal.js"></script>
+  <script>
+    $('.openModal').on('click', function(e) {
+      e.preventDefault();
+      modal.open({ width: 400, height: 400, content: 'Hi Todd' });
+    });
+  </script>
+</body>
+
+</html>
